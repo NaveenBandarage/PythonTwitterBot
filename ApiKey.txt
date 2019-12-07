@@ -1,0 +1,4 @@
+Line 1: This is the consumer key.
+Line 2: This is the consumer secret. 
+Line 3: This is the access token. 
+Line 4: This is the access token secret. 
