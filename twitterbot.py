@@ -9,7 +9,9 @@ consumerKey = read.readline().strip()
 consumerSecret = read.readline().strip()
 accessToken = read.readline().strip()
 accessTokenSecret = read.readline().strip()
+#reads from each line in the file. The .strip() removes whitespace that follows
 
+#all tweepy stuff
 CONSUMER_KEY = consumerKey
 CONSUMER_SECRET = consumerSecret
 ACCESS_TOKEN = accessToken
@@ -18,6 +20,7 @@ auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
 
+#Getting input and then updating status
 status = input("Write your tweet here: ")
 #status = "This is a test tweet!"
 api.update_status(status=status)
