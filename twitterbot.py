@@ -1,6 +1,5 @@
 import random
-from tweepy import OAuthHandler
-from tweepy import Stream
+import tweepy
 #import string from ascii_lowercase
 
 auth = tweepy.OAuthHandler("accesskeys", "secretkey")
