@@ -1,7 +1,9 @@
 import random
+from tweepy import OAuthHandler
+from tweepy import Stream
 #import string from ascii_lowercase
 
-
+auth = tweepy.OAuthHandler("accesskeys", "secretkey")
 def textAlteration(text):
     textArray = []
     numberString = ''
